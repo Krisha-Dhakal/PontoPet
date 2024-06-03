@@ -1,0 +1,95 @@
+.book_section {
+    h4 {
+      position: relative;
+      padding-bottom: 5px;
+  
+      span {
+        color: $primary1;
+      }
+  
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 75px;
+        height: 2px;
+        background-color: $primary1;
+      }
+  
+      margin-bottom: 35px;
+    }
+  
+    form {
+      padding: 35px 45px;
+      box-shadow: 0 0 15px 10px rgba($color: #000000, $alpha: .07);
+  
+      label {
+        color: $black;
+      }
+  
+      .form-control {
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid $primary1;
+        height: 45px;
+        outline: none;
+        box-shadow: none;
+        border-radius: 5px;
+        padding: 0 15px;
+  
+        &::placeholder {
+          color: $primary1;
+        }
+      }
+  
+      #inputDate {
+        color: $primary1;
+  
+        input {
+          color: $primary1;
+        }
+      }
+  
+      button.btn {
+        background-color: $primary2;
+        color: #ffffff;
+        padding: 10px 45px;
+        border-radius: 5px;
+        margin-top: 10px;
+        text-transform: uppercase;
+      }
+    }
+  
+    .date_icon {
+      right: 10px;
+      height: 100%;
+      position: absolute;
+      background-color: transparent;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $primary1;
+    }
+  
+    .nice-select {
+      &:after {
+        content: "\f107";
+        font-family: FontAwesome;
+        border: none;
+        width: auto;
+        height: auto;
+        transform: none;
+        top: 7px;
+        font-size: 20px;
+        font-weight: bold;
+        transition: all .3s;
+      }
+  
+      &.open:after {
+        content: "\f106";
+      }
+    }
+  
+  }
