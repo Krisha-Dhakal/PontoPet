@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        body {
+            background-color: #add5dd;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .breadcrumb {
+            margin-bottom: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 5px;
+        }
+        .breadcrumb a {
+            color: #333;
+            text-decoration: none;
+        }
+        .form-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .form-title {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+        .field-group {
+            margin-bottom: 15px;
+        }
+        .field-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .field-group input[type="text"],
+        .field-group input[type="email"],
+        .field-group input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .field-group button {
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .field-group button:hover {
+            background: #555;
+        }
+        .field-group.inline-label {
+            display: flex;
+            align-items: center;
+        }
+        .field-group.inline-label input {
+            margin-right: 10px;
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="/" title="Home">Home</a>&raquo;
+        <span>Register</span>
+    </div>
+    <div class="form-box form-center">
+        <h1 class="form-title">Register</h1>
+        <form action="/adduser" method="POST" name="register_form">
+            <div class="field-group">
+                <label for="fname">Full Name<span class="required">*</span></label>
+                <input type="text" name="fullname" id="fname" value="" placeholder="Full Name" />
+                <span class="error"></span>
+            </div>
+            <div class="field-group">
+                <label for="email">E-mail<span class="required">*</span></label>
+                <input type="email" name="email" id="email" value="" placeholder="Your E-mail" />
+                <span class="error"></span>
+            </div>
+            <div class="field-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" id="phone" value="" placeholder="Your Phone or Mobile Number" />
+            </div>
+            <div class="field-group">
+                <label for="pwd">Password<span class="required">*</span></label>
+                <input type="password" name="pwd" id="pwd" value="" placeholder="Your Password" />
+                <span class="error"></span>
+            </div>
+            <div class="field-group">
+                <label for="cpwd">Confirm Password<span class="required">*</span></label>
+                <input type="password" name="cpwd" id="cpwd" value="" placeholder="Confirm Your Password" />
+                <span class="error"></span>
+            </div>
+            <div class="field-group">
+                <button type="submit" name="submit">Register User</button>
+            </div>
+            <div class="field-group inline-label">
+                Already have an account?
+                <a href="/login" title="Login">Login Now</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

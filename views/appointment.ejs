@@ -1,0 +1,97 @@
+ <!-- bootstrap core css -->
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+ <!-- fonts style -->
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+ <!--owl slider stylesheet -->
+ <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+ <!-- font awesome style -->
+ <link href="css/font-awesome.min.css" rel="stylesheet" />
+ <!-- nice select -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+ <!-- datepicker -->
+ <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css"> -->
+ <!-- Custom styles for this template -->
+ <link href="css/style.css" rel="stylesheet" />
+ <link href="css/appoint.css" rel="stylesheet" />
+ <!-- responsive style -->
+ <link href="css/responsive.css" rel="stylesheet" />
+ <link href="css/style.scss" rel="stylesheet" />
+
+<section class="book_section layout_padding" id="book">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form action="/appoint" method="POST" name="appointment_form">
+            <h4>
+              <p class="book">BOOK <span>APPOINTMENT</span></p>
+            </h4>
+            <div class="form-row ">
+              <div class="form-group col-lg-4">
+                <label for="inputPatientName">Name</label>
+                <input type="text" class="form-control" id="inputPatientName" placeholder="" name="fullname">
+              </div>
+              <div class="form-group col-lg-4">
+                <label for="inputDoctorName">Pet</label>
+                <select name="" class="form-control wide" id="inputDoctorName" name="pet">
+                  <option value="Normal distribution ">Dog </option>
+                  <option value="Normal distribution ">Cat </option>
+                  <option value="Normal distribution ">Kitten </option>
+                  <option value="Normal distribution ">Puppy</option>
+                </select>
+              </div>
+              <div class="form-group col-lg-4">
+                <label for="inputDepartmentName">Services</label>
+                <select name="" class="form-control wide" id="inputDepartmentName" name="services">
+                  <option value="Normal distribution ">Full Body Wash</option>
+                  <option value="Normal distribution ">Nail Trimming </option>
+                  <option value="Normal distribution ">Regular Checkups </option>
+                  <option value="Normal distribution ">Vitamins </option>
+                  <option value="Normal distribution ">Vaccinations </option>
+                  <option value="Normal distribution ">Hair Trimming </option>
+                  <option value="Normal distribution ">Nutritional Diet Plan </option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row ">
+              <div class="form-group col-lg-4">
+                <label for="inputPhone">Phone Number</label>
+                <input type="number" class="form-control" id="inputPhone" name="phonenumber">
+              </div>
+              <div class="form-group col-lg-4">
+                <label for="inputSymptoms">Choose Date</label>
+                <input type="date" id="Test_DatetimeLocal" name="date">
+              </div>
+              <div class="form-group col-lg-4">
+                <label for="inputDate">Choose Time </label>
+                <div class="input-group date" id="inputDate" data-date-format="mm-dd-yyyy">
+                  <!-- <input type="text" class="form-control" readonly> -->
+                  <!-- <span class="input-group-addon date_icon">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                  </span> -->
+                  <input type="time" id="Test_DatetimeLocal" name="time">
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="btn-box">
+              <button type="submit" class="btn ">Book Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="/bootstrap.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- datepicker -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script> -->
+  <!-- custom js -->
+  <script src="/custom.js"></script>

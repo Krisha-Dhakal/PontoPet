@@ -1,0 +1,158 @@
+<html>
+    <head>
+    <%- include('./partials/meta')%>
+    <title>
+        <%= title %>
+    </title>
+       <!-- Start of Async Drift Code -->
+<script>
+    "use strict";
+    
+    !function() {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+        t.factory = function(e) {
+          return function() {
+            var n = Array.prototype.slice.call(arguments);
+            return n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+          var i = document.getElementsByTagName("script")[0];
+          i.parentNode.insertBefore(o, i);
+        };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('mmpbbivv565v');
+    </script>
+    <!-- End of Async Drift Code -->   <!--drift.api.showWelcomeMessage()-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    
+<body>
+    <div class="bg">
+        <%- include('./partials/header')%>
+        <header>
+            <div class="col col6">
+            <div class="conatiner1">
+                <div class="home_header_info">
+                    <p id="first">The Best Pet <br>
+                        Groomers <br>
+                        in Town </p>
+                    <p id="last">For a pawfect look and feel</p>
+                </div>
+            </div>
+        </div>
+        </header>
+    </div>
+
+
+
+    
+    <!-- <div class="row clearfix"> -->
+        <div class="col col12">
+            <div class="appointment">
+                <h1 class="app-title">Your pet deserves <br> to be pampered!</h1>
+                <img src="/images/banner.jpg" />
+                <div class="button-app">
+                <a href="#book">Book an Appointment</a>
+                </div>
+            </div>
+            
+        </div>
+
+        
+    <%- include('gallery')%>
+
+    <Section id="welcome_Sec">
+        <div class="container1" id="service">
+            <h2><span>Our Store</span></h2>
+        </div>
+    </Section>
+    <Section id="slides_parent">
+        <div class="container1">
+            <div class="slides">
+                <a href="#">
+                <div class="slide_1">
+                    <div class="slide_info">
+                        <p>Dog Foods</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="slide_1 slide_2">
+                    <div class="slide_info">
+                        <p>Cat Foods</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="slide_1 slide_3">
+                    <div class="slide_info">
+                        <p>Cat Accessories</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="slide_1 slide_4">
+                    <div class="slide_info">
+                        <p> Dog Supplements</p>
+                    </div>
+                </div>
+            </a> 
+            <a href="#">
+                <div class="slide_1 slide_5">
+                    <div class="slide_info">
+                        <p>Vaccination</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="slide_1 slide_6">
+                    <div class="slide_info">
+                        <p>Dog Accessories</p>
+                    </div>
+                </div>
+            </a>
+                <a href="#">
+                <div class="slide_1 slide_7">
+                    <div class="slide_info">
+                        <p>Cat Supplements
+                        </p>
+                    </div>
+                </div>
+            </a>
+                <!-- <div class="slide_1 slide_8">
+                    <div class="slide_info">
+                        <p>Nutritional Diet Plan
+                        </p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="button-app">
+            <a href="/store">Visit our Store</a>
+            </div>
+    </Section>
+
+    <%- include('appointment')%>
+
+    <div class="customer_container">
+        <h1 class="app-title1">What Our Happy Client Say</h1>
+        <div class="customer_cont">
+            <%- include('customer')%>
+        </div>
+    </div>
+
+
+
+    <%- include('./partials/footer')%>
+    
+</body>
+</html>

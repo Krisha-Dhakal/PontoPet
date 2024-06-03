@@ -1,0 +1,80 @@
+<!--Pet Project-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>contactform</title>
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        
+        <!---->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/css/contact.css" type="text/css" />
+        <link rel="stylesheet" href="/css/grid.css" type="text/css"/>
+
+        <link rel="stylesheet" href="/css/style.css" type="text/css"/>
+
+</head>
+<body>
+    
+
+    <div class="pcontact-block clearfix">       
+        <div class="form_fill clearfix">
+            <h2 class="form_fill_title">CONTACT US</h2>
+            
+            <div class="form--text">
+                <p>Please fill the form given below</p>
+            </div>
+            <hr>
+            <form action="/addcontact" method="POST" name="contact_form">       
+                <ul class="contact-fill">
+                  
+                    <li>   
+                        <label for="fname">NAME </label> <br/>            
+                        <input type="text" name="firstname" value="" placeholder="First *" id="fname" required="required" />
+                        <input type="text" name="lastname" value="" placeholder="Last " id="fname"  />
+                    </li>
+                    <li>
+                        <label for="address">ADDRESS</label> <br/>
+                        <input type="text" name="address" value="" placeholder="Address"  id="address" required="required" />
+                    </li>
+                    <li>
+                        <label for="email">E-MAIL</label> <br/>
+                        <input type="email" name="email" value="" placeholder="eg:info@gmail.com *"  id="email" required="required" />
+                    </li>
+                    <li>
+                        <label for="message">MESSAGE</label> <br/>
+                        <textarea name="message" id="message" cols="60" rows="60" id="message" placeholder="write message here..."></textarea>
+                    </li>
+                    <li>
+                    </ul>
+                
+                    <div class="botton-group">
+                    <button type="submit" name="submit" id="submit"> Submit Data</button> 
+                <!-- <input type="reset" name="reset" id="reset" value="Reset Data" /> -->
+                    </div>
+                    
+            </form> 
+        </div>
+
+
+        <!-- <div class="go-back">
+            <a href="index1.html" title="go back" class="button">GO BACK </a>
+        </div> -->
+    </div>
+    </svg>
+
+    <!--Map-->
+    <div class="map-box">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1cTOu0kpcLqENL5KdaKfau3D20zM&msa=0&ie=UTF8&t=m&ll=35.202253%2C33.343238&spn=0.003068%2C0.004613&z=17&iwloc=0004c26b7395f1afccfdb&output=embed" width="2000" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    </div>
+    <%- include('./partials/footer')%>
+    </body>
+</html>
