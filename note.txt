@@ -1,0 +1,33 @@
+- Node works making own server
+- Because, NodeJS is back-end (server-side) program
+-Servers:
+    - Localhost (on local computer)
+    - Virtual Host (on local computer)
+    - Classic Servers (to go live)
+    - Cloud Servers (to go live)
+
+    Additionally:
+    - VPS (Virtual Private Server) (to go live)
+    -Dedicated server
+
+- To work effeviently with easy coding:
+    NodeJS has framework called ExpressJS
+
+-To make webpages, we require standard engine like: HTML. NodeJS has "Template Engine" called EJS.
+
+-Every program leads with entry point like: index.html of HTML, and index.php of PHP program. we can provide custom entry point to the NodeJS.
+By default, it takes index.js as an entry point.
+
+- General Packages for project:
+    - to use '.env' file to configure environment variables
+        nodejs package: dotenv
+    - framework level activities
+        nodejs package: ExpressJS
+    - Seesion handling
+        nodejs package: express-session
+    - Form Validator
+        nodejs package: express-validator
+    - Handling image MINE type
+        nodejs package: multer
+    
+    etc...
